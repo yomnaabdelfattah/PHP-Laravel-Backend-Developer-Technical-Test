@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+use App\Http\Controllers\PostController;
+
+Route::get('/posts', function () {
+    return view('posts'); // Make sure this matches the name of your Blade file
+});
